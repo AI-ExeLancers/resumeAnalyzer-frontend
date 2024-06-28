@@ -4,6 +4,7 @@ pipeline{
     stage("build"){
       steps{
         echo "building the applicationn"
+        echo "edited jenkins file"
       }
     }
 
