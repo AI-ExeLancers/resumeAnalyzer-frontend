@@ -1,0 +1,112 @@
+.ezy__about13_7yAnfJiZ {
+	/* Bootstrap variables */
+	--bs-body-color: #1e2329;
+	--bs-body-bg: rgb(255, 255, 255);
+
+	/* Easy Frontend variables */
+	--ezy-theme-color: rgb(13, 110, 253);
+	--ezy-theme-color-rgb: 13, 110, 253;
+
+	background-color: var(--bs-body-bg);
+	color: var(--bs-body-color);
+	overflow: hidden;
+	padding: 60px 0;
+	position: relative;
+}
+@media (min-width: 768px) {
+	.ezy__about13_7yAnfJiZ {
+		padding: 100px 0;
+	}
+}
+
+/* Gray Block Style */
+.gray .ezy__about13_7yAnfJiZ,
+.ezy__about13_7yAnfJiZ.gray {
+	/* Bootstrap variables */
+	--bs-body-bg: rgb(246, 246, 246);
+}
+
+/* Dark Gray Block Style */
+.dark-gray .ezy__about13_7yAnfJiZ,
+.ezy__about13_7yAnfJiZ.dark-gray {
+	/* Bootstrap variables */
+	--bs-body-color: #ffffff;
+	--bs-body-bg: rgb(30, 39, 53);
+}
+
+/* Dark Block Style */
+.dark .ezy__about13_7yAnfJiZ,
+.ezy__about13_7yAnfJiZ.dark {
+	/* Bootstrap variables */
+	--bs-body-color: #ffffff;
+	--bs-body-bg: rgb(11, 23, 39);
+}
+
+.ezy__about13_7yAnfJiZ-heading {
+	font-size: 35px;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+@media (min-width: 768px) {
+	.ezy__about13_7yAnfJiZ-heading {
+		font-size: 55px;
+	}
+}
+
+.ezy__about13_7yAnfJiZ-sub-heading {
+	font-size: 17px;
+	line-height: 1.5;
+	opacity: 0.75;
+}
+
+.ezy__about13_7yAnfJiZ-divider {
+	width: 100px;
+	height: 3px !important;
+	color: var(--bs-body-color);
+	opacity: 1;
+}
+.ezy__about13_7yAnfJiZ img {
+	transform: rotate(45deg);
+	position: relative;
+	top: 60px;
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+}
+.ezy__about13_7yAnfJiZ-img2 {
+	top: -400px;
+	left: 300px !important;
+	position: absolute !important;
+	display: none;
+}
+@media (min-width: 768px) {
+	.ezy__about13_7yAnfJiZ-img2 {
+		display: block;
+	}
+}
+
+@media (min-width: 991px) {
+	.ezy__about13_7yAnfJiZ img {
+		transform: rotate(45deg);
+		position: relative;
+		left: 100px;
+		width: 400px;
+		height: 400px;
+		object-fit: cover;
+	}
+	.ezy__about13_7yAnfJiZ-img2 {
+		top: 0px !important;
+		left: 100px !important;
+		position: relative !important;
+	}
+}
+
+.ezy__about13_7yAnfJiZ-bg-holder {
+	width: 36vw;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(var(--ezy-theme-color-rgb), 0.3);
+	float: left;
+}

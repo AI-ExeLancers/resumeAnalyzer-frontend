@@ -1,0 +1,215 @@
+$box-shadow:0px 4px 10px rgba(0, 0, 0, 0.3);
+$register-page-bg:linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+$register-card-border: #f0f8ff;
+$form-header-color:#7ea19d;
+$form-header-p:rgb(68, 68, 68);
+$btn-register:#7ea19d;
+$btn-register-hover:green;
+$link-to-page-color:white;
+$error:red;
+$sidebar-list-hover:#a6a6a6;
+$dashboard-area-bg:linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+$dashboard-card-bg:linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+$dashboard-form-bg:#66CDAA;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.side-image {
+  overflow: hidden; /* Ensure the image does not overflow the container */
+}
+
+.side-image img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 100%;
+  height: auto;
+  max-height: 800px;
+}
+.sky-gradient {
+  background:$register-page-bg;
+}
+.login-area {
+  padding: 150px 0px !important;
+}
+.registration-area {
+  padding: 60px 0px;
+  height: fit-content;
+  .registration {
+    max-height: 800px;
+    max-width: 1300px;
+    margin: auto;
+    border-radius: 10px;
+    border-color: $register-card-border;
+    box-shadow: $box-shadow;
+
+    .form-area {
+      background-color: $register-card-border;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    .card-header {
+      background-color: $register-card-border;
+      border-top-right-radius: 10px;
+      h1 {
+        font-size: 55px;
+        color: $form-header-color;
+      }
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        color: $form-header-p;
+      }
+    }
+
+    .input-block {
+      position: relative;
+    }
+    .input-block i {
+      position: absolute;
+      right: 10px;
+      cursor: pointer;
+      top: 36px;
+    }
+    .btn-register {
+      background-color: $form-header-color;
+      border-color: $form-header-color;
+      font-weight: 500;
+    }
+    .btn-register:hover {
+      background-color:$btn-register-hover;
+      border-color: $btn-register-hover;
+      transition: 0.4s ease-in-out;
+    }
+    .link-to-page {
+      margin: 50px auto 0px auto;
+      text-align: center;
+      border: 2px solid $form-header-color;
+      border-radius: 10px;
+      padding: 5px 10px;
+      max-width: fit-content;
+      font-weight: 500;
+      color: $form-header-color;
+
+      a {
+        text-decoration: none;
+        color: $btn-register-hover;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+    .link-to-page:hover {
+      background-color: $form-header-color;
+      color:$link-to-page-color;
+      transition: 0.4s ease-in-out;
+      a {
+        color: $link-to-page-color;
+        transition: 0.4s ease-in-out;
+      }
+    }
+  }
+}
+
+.error {
+  color: $error;
+  margin-bottom: 0;
+  font-size: 15px;
+}
+.error-field {
+  border-color:$error;
+}
+
+.sidebar-toggle {
+  font-size: 22px;
+}
+.offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    background: transparent;
+    border: none;
+  }
+}
+.offcanvas-body {
+  p {
+    font-size: 22px;
+    text-align: left;
+    cursor: pointer;
+    padding: 0px 10px;
+    border-radius: 5px;
+  }
+  p:hover {
+    background-color: $sidebar-list-hover;
+    transition: 0.2s ease-in-out;
+  }
+}
+.dashboard-area {
+  background: $dashboard-area-bg;
+  .card {
+    background: $dashboard-card-bg;
+    box-shadow: $box-shadow;
+    margin-bottom: 10px;
+  }
+  .card-body {
+    h1 {
+      font-size: 50px;
+    }
+  }
+  
+  .previous-analysis {
+    border: 1px solid $dashboard-form-bg;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: $dashboard-form-bg;
+    box-shadow: $box-shadow;
+  }
+  .add-job-desc{
+    border: 1px solid $dashboard-form-bg;
+    border-radius: 10px;
+    padding: 20px 50px;
+    background-color: $dashboard-form-bg;
+    box-shadow: $box-shadow;
+    button{
+      font-weight: 500;
+    }
+  }
+}
+
